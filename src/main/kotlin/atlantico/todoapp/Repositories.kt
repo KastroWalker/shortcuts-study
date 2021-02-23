@@ -1,11 +1,11 @@
 package atlantico.todoapp
 
-import org.springframework.data.repository.CrudRepository
-import org.springframework.stereotype.Repository
+import io.micronaut.data.annotation.Repository
+import io.micronaut.data.repository.CrudRepository
 import javax.inject.Singleton
 
 @Repository
 @Singleton
-interface TodoRepository : CrudRepository<Todo, Int>{
+interface TodoRepository : CrudRepository<Todo, Int> {
 
 }
